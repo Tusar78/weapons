@@ -8,7 +8,7 @@
   }
   
   .navigation {
-    @apply w-full px-4 bg-black;
+    @apply w-full px-4 bg-white shadow-md fixed top-0;
   }
 
   .nav {
@@ -16,7 +16,7 @@
   }
 
   .nav__logo {
-    @apply text-blue-50 font-bold uppercase block text-2xl;
+    @apply text-amber-500 font-bold uppercase block text-2xl;
   }
 
   .cart__btn {
@@ -24,7 +24,7 @@
   }
 
   .cart__icon {
-    @apply text-blue-50 text-3xl cursor-pointer;
+    @apply text-amber-500 text-3xl cursor-pointer;
   }
 
   .cart__quantity {
@@ -33,7 +33,7 @@
 
   /*==== Products Component style ====*/
   .product__container {
-    @apply mt-6 max-w-screen-lg px-4 lg:px-0 mx-auto grid gap-4;
+    @apply mt-24 max-w-screen-lg px-4 lg:px-0 mx-auto grid gap-4;
   }
 
   /*==== Product Component style ====*/
