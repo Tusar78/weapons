@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
 import { BsFillCartPlusFill, IoMdClose } from "react-icons/all";
+import AddedCart from "../AddedCart/AddedCart";
 
 const customStyles = {
   content: {
@@ -23,10 +24,10 @@ const Cart = ({ cart }) => {
     setIsOpen(true);
   }
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00";
-  }
+  // function afterOpenModal() {
+  //   // references are now sync'd and can be accessed.
+  //   subtitle.style.color = "#f00";
+  // }
 
   function closeModal() {
     setIsOpen(false);
@@ -40,15 +41,17 @@ const Cart = ({ cart }) => {
       </div>
       <Modal
         isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
       >
         <button onClick={closeModal} className="close-btn">
-          <IoMdClose className="close-icon" />
+          <IoMdClose className="close-icon"/>
         </button>
         <div className="addedCart-container">
+          {
+            cart.map(cartProduct => <AddedCart cart={cartProduct} />)
+          }
           
         </div>
       </Modal>
