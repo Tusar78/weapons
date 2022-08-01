@@ -33,7 +33,22 @@
 
   /*==== Products Component style ====*/
   .product__container {
-    @apply mt-6 max-w-screen-lg px-4 mx-auto grid grid-cols-4;
+    @apply mt-6 max-w-screen-lg px-4 lg:px-0 mx-auto grid gap-4;
   }
+
+  /*==== Product Component style ====*/
+  .product {
+    @apply w-60 p-3 rounded-md shadow-md bg-gray-100;
+  }
+
+  .product__img {
+    @apply w-full h-52;
+  }
+  
 }
 
+@layer utilities {
+  .product__container {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}
