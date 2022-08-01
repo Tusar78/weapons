@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Products from './Components/Products/Products';
 
 function App() {
+  const [cart, setCart] = useState([]);
   const addToCart = product => {
-    console.log(product);
+    const newCart = [...cart, product];
+    setCart(newCart);
   }
 
   return (
     <>
       <header className="header">
-        <Navbar />
+        <Navbar cart={cart} />
       </header>
       <main className="main">
         <Products addToCart={addToCart} />
