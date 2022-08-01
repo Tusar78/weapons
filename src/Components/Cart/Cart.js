@@ -48,7 +48,9 @@ const Cart = ({ cart }) => {
         <button onClick={closeModal} className="close-btn">
           <IoMdClose className="close-icon" />
         </button>
-        <h2>Hello World!</h2>
+        <div className="addedCart-container">
+          
+        </div>
       </Modal>
     </>
   );
