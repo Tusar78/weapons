@@ -72,7 +72,16 @@
   .product__cart-icon {
     @apply text-2xl text-white;
   }
-  
+
+  /*==== Close Button ====*/
+  .close-btn {
+    @apply p-1 border border-red-500;
+  }
+
+  .close-icon {
+    @apply text-red-500;
+  }
+
 }
 
 @layer utilities {
