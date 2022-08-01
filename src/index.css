@@ -6,4 +6,28 @@
   .logo {
     @apply  bg-blue-500 text-white p-4 rounded m-4 font-bold;
   }
+  
+  .navigation {
+    @apply w-full px-4 bg-black;
+  }
+
+  .nav {
+    @apply max-w-screen-lg h-14 mx-auto flex justify-between items-center;
+  }
+
+  .nav__logo {
+    @apply text-blue-50 font-bold uppercase block text-xl;
+  }
+
+  .cart__btn {
+    @apply relative;
+  }
+
+  .cart__icon {
+    @apply text-blue-50 text-2xl cursor-pointer;
+  }
+
+  .cart__quantity {
+    @apply absolute bg-red-200 w-6 h-6 rounded-2xl flex justify-center items-center -top-4 -right-3;
+  }
 }
