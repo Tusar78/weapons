@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFillCartPlusFill } from "react-icons/bs";
+import Cart from "../Cart/Cart";
 
 const Navbar = ({ cart }) => {
   console.log(cart);
@@ -10,10 +10,7 @@ const Navbar = ({ cart }) => {
           Weapons
         </a>
 
-        <div className="cart__btn">
-          <BsFillCartPlusFill className="cart__icon" />
-          <span className="cart__quantity">{cart.length}</span>
-        </div>
+        <Cart cart={cart} />
       </nav>
     </div>
   );
