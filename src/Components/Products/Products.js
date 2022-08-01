@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Product from "../Product/Product";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -12,8 +13,7 @@ const Products = () => {
       <div className="product__container">
           {
             products.map(product => {
-              console.log(product);
-              return <>hello react</>
+              return <Product key={product.id} product={product} />
             })
           }
       </div>
