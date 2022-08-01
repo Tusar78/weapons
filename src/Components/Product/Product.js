@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
-const Product = ({ product }) => {
+const Product = ({ product, addToCart }) => {
   const { img, category, name, action, bullet, price } = product;
   return (
     <div className="product">
@@ -15,9 +15,9 @@ const Product = ({ product }) => {
         <p className="product__price">Price: ${price}</p>
       </div>
 
-      <div className="product__cart">
+      <button className="product__cart" onClick={() => addToCart(product)}>
         <AiOutlineShoppingCart className="product__cart-icon" />
-      </div>
+      </button>
     </div>
   );
 };
