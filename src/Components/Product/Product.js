@@ -16,8 +16,7 @@ const Product = ({ product }) => {
       </div>
 
       <div className="product__cart">
-        <span>Cart</span>
-        <AiOutlineShoppingCart />
+        <AiOutlineShoppingCart className="product__cart-icon" />
       </div>
     </div>
   );

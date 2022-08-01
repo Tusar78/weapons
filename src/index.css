@@ -42,7 +42,35 @@
   }
 
   .product__img {
-    @apply w-full h-52;
+    @apply w-full h-52 rounded-md;
+  }
+
+  .product__info {
+    @apply mt-3;
+  }
+
+  .product__category {
+    @apply text-[10px] uppercase text-purple-400 font-semibold;
+  }
+
+  .product__title {
+    @apply text-xl font-semibold text-blue-500 -mt-2;
+  }
+
+  .product__info p {
+    @apply text-sm mb-1
+  }
+
+  .product__price {
+    @apply text-amber-500 font-semibold;
+  }
+
+  .product__cart {
+    @apply inline-block items-center gap-1 bg-blue-500 text-white font-semibold px-4 py-1 rounded cursor-pointer; 
+  }
+
+  .product__cart-icon {
+    @apply text-2xl text-white;
   }
   
 }
