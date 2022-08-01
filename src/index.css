@@ -12,11 +12,11 @@
   }
 
   .nav {
-    @apply max-w-screen-lg h-14 mx-auto flex justify-between items-center;
+    @apply max-w-screen-lg h-16 mx-auto flex justify-between items-center;
   }
 
   .nav__logo {
-    @apply text-blue-50 font-bold uppercase block text-xl;
+    @apply text-blue-50 font-bold uppercase block text-2xl;
   }
 
   .cart__btn {
@@ -24,10 +24,10 @@
   }
 
   .cart__icon {
-    @apply text-blue-50 text-2xl cursor-pointer;
+    @apply text-blue-50 text-3xl cursor-pointer;
   }
 
   .cart__quantity {
-    @apply absolute bg-red-200 w-6 h-6 rounded-2xl flex justify-center items-center -top-4 -right-3;
+    @apply absolute bg-[rgba(161,182,253,0.8)] w-5 h-5 rounded flex justify-center items-center -top-3 -right-2.5 font-bold text-white;
   }
 }
