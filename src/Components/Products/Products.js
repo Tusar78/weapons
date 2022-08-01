@@ -12,6 +12,7 @@ const Products = () => {
       <div className="product__container">
           {
             products.map(product => {
+              console.log(product);
               return <>hello react</>
             })
           }
