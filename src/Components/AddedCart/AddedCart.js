@@ -8,7 +8,7 @@ const AddedCart = ({cart}) => {
       <img src={img} alt={name} className="addedCart__img" />
       <div className="addedCart__info">
         <h4 className='addedCart__title'>{name}</h4>
-        <span className='addedCart__bullet'>Bullet: {bullet}</span>
+        <span className='addedCart__bullet'>Quantity: {bullet}</span>
       </div>
     </div>
   );

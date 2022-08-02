@@ -1,6 +1,7 @@
 import React from "react";
+import { BsFillCartPlusFill } from "react-icons/bs";
+import { IoMdClose } from "react-icons/io";
 import Modal from "react-modal";
-import { BsFillCartPlusFill, IoMdClose } from "react-icons/all";
 import AddedCart from "../AddedCart/AddedCart";
 
 const customStyles = {
@@ -17,7 +18,6 @@ const customStyles = {
 Modal.setAppElement("#root");
 
 const Cart = ({ cart }) => {
-  let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
