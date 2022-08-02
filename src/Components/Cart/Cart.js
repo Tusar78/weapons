@@ -50,7 +50,7 @@ const Cart = ({ cart }) => {
         </button>
         <div className="addedCart-container">
           {
-            cart.map(cartProduct => <AddedCart key={cart.id} cart={cartProduct} />)
+            cart.map(cartProduct => <AddedCart key={Math.random()} cart={cartProduct} />)
           }
           
         </div>
