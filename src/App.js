@@ -8,6 +8,7 @@ function App() {
     const newCart = [...cart, product];
     setCart(newCart);
   }
+  console.log(cart)
 
   return (
     <>
